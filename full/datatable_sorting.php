@@ -27,7 +27,7 @@
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_sorting.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -401,12 +401,13 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menú principal</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
+							<a href="index.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
 						</li>
@@ -475,7 +476,7 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<!--li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
 						<!-- /main -->
 
 						<!-- Forms --
@@ -1214,7 +1215,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">EMPLEADOS</span> - Lista de empleados</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Agregar departamentos</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1231,8 +1232,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Basic</span>
+							<a href="datatable_sorting.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Sorting</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1269,10 +1270,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
+				<!-- Default ordering -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Lista de empleados</h5>
+						<h5 class="card-title">DEPARTAMENTOS</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1283,32 +1284,28 @@
 					</div>
 
 					<div class="card-body">
-						The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong>
+						En caso de que un nuevo departamento surga en su empresa, tiene a su disposición esta opción para agregarlo junto con los datos correspondientes.
+						Llene el formmulario que se le presenta a continuación.
 					</div>
 
-					<table class="table datatable-basic">
+					<table class="table datatable-responsive">
 						<thead>
 							<tr>
-								<th>Nombre</th>
-								<th>Apellidos</th>
-								<th>Edad</th>
-								<th>Fecha de nacimiento</th>
-								<th>Domicilio</th>
-								<td>Teléfono</td>
-								<td>E-mail</td>
-								<td>Sueldo</td>
-							</tr>
+				                <th>Nombre del departamento</th>
+				                <th>Clave</th>
+				                <th>Número de empleados</th>
+				                <th>Especialidad</th>
+				                <th>Ubicación</th>
+				                <th class="text-center">Actions</th>
+				            </tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Martin</td>
-								<td>Lopez</a></td>
-								<td>30</td>
-								<td>22-Junio-1989</td>
-								<td>Ciruelo, #1892, Fracc. El Olivo</td>
-								<td>834-123-3321</td>
-								<td>mlopez_89@outlook.com</td>
-								<td>$1,500</td>
+								<td>Recursos Humanos</td>
+				                <td>1001-2019</td>
+				                <td>1</td>
+				                <td>Organizar el desempeño de los funcionarios de la empresa</td>
+				                <td>Piso 1</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1326,14 +1323,11 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Jacquelin</td>
-								<td>Carrera</td>
-								<td>29</a></td>
-								<td>3-Octubre-1989</td>
-								<td>Artículo 29, #1010, Casas Blancas</td>
-								<td>834-512-2002</td>
-								<td>Pendiente</td>
-								<td>$2,000</td>
+								<td>Finanzas y Contabilidad</td>
+				                <td>2090-2019</td>
+				                <td>2</td>
+				                <td>Llevar un registro de todo gasto, ganancia y pérdida que ocurran en la empresa</td>
+				                <td>Piso 4</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1351,39 +1345,11 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Aurora</td>
-								<td>de la Cruz</td>
-								<td>47</td>
-								<td>19-Abril-1972</td>
-								<td>Amp. Linda Vista, #449, Mainero</td>
-								<td>834-221-2918</td>
-								<td>acruzdl@gmail.com</td>
-								<td>$2,000</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Natalia</td>
-								<td>Requena</td>
-								<td>42</a></td>
-								<td>13-Diciembre-1977</td>
-								<td>Horacio Terán, #621, Vamos Tamaulipas</td>
-								<td>834-212-4152</td>
-								<td>Pendiente</td>
-								<td>$1,500</td>
+								<td>Dirección General</td>
+				                <td>3012-2019</td>
+				                <td>2</td>
+				                <td>Definir objetivos, y cuidar de que se cumplan</td>
+				                <td>Piso 5</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1401,14 +1367,11 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Sharon</td>
-								<td>Aguilar</td>
-								<td>28</a></td>
-								<td>30-Diciembre-1991</td>
-								<td>Artículo 123, #110, Amalia G. de Castillo Ledón</td>
-								<td>834-222-2010</td>
-								<td>sharon_aguilar@outlook.com</td>
-								<td>$900</td>
+								<td>Informática</td>
+				                <td>1221-2019</td>
+				                <td>1</td>
+				                <td>Diseñar sistemas, programas, bases de datos, etc., todo lo que la empresa requiera en determinado momento</td>
+				                <td>Piso 2</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1426,14 +1389,11 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Máximo</td>
-								<td>López</td>
-								<td>32</a></td>
-								<td>17-Octubre-1987</td>
-								<td>Bénito Juárez, #150, Praxedis Balboa</td>
-								<td>834-112-1122</td>
-								<td>N/P (no proporcionado)</td>
-								<td>$750</td>
+								<td>Publicidad y Mercadotécnia</td>
+				                <td>1998-2019</td>
+				                <td>2</td>
+				                <td>Dar a conocer a la empresa a todo público, con tal de que más gente observe lo que hacemos y contrate nuestros servicios</td>
+				                <td>Piso 3</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1450,57 +1410,138 @@
 									</div>
 								</td>
 							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td>Martinez</a></td>
-								<td>36</td>
-								<td>11-Noviembre-1983</td>
-								<td>Ravizé, #3350, Casas Blancas</td>
-								<td>833-122-1120</td>
-								<td>Sin correo</td>
-								<td>$1,750</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<!--div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div-->
-										</div>
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre del departamento</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Dirección General">
 									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizbeth</td>
-								<td>Amairani</a></td>
-								<td>58</td>
-								<td>1-Noviembre-1961</td>
-								<td>La Moderna, #1200, Fracc. Los Olivos</td>
-								<td>833-112-2331</td>
-								<td>lamairani58@hotmail.com</td>
-								<td>$1,750</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+							</div>
 
-											<!--div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div-->
-										</div>
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Clave</label>
+									<div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="ej. número aleatorio - año actual (1980-2019)">
 									</div>
-								</td>
-							</tr>
+							</div>
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Número de empleados</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Con cuantos empleados cuenta su departamento">
+									</div>
+							</div>			
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Especialidad</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. A qué se dedica su departamento">
+									</div>
+							</div>
+											
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Ubicación</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Ubicación dentro de la empresa">
+									</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-4">
+								<div class="card card-body border-top-primary">
+		                   		<button type="button" class="btn btn-primary">Actualizar</button>
+	                   			</div>
+								</div>
+							</div>
 							<!--tr>
+								<td>Maxine</td>
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sylvia</td>
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Lizzee</td>
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Kennedy</td>
+								<td>Haley</td>
+								<td>Senior Marketing Designer</td>
+								<td>18 Dec 1960</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
 								<td>Chantal</td>
 								<td><a href="#">Nailor</a></td>
 								<td>Technical Services Librarian</td>
@@ -1634,14 +1675,14 @@
 							</tr>
 						</tbody>
 					</table>
-				</div-->
-				<!-- /basic datatable -->
+				</div>
+				<!-- /default ordering -->
 
 
-				<!-- Pagination types --
+				<!-- Multi column ordering --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pagination types</h5>
+						<h5 class="card-title">Multi column ordering</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1652,10 +1693,10 @@
 					</div>
 
 					<div class="card-body">
-						The default page control (forward and backward buttons with up to 7 page numbers in-between) is fine for most situations, but in some cases you may wish to customise the options presented to the end user. This is done through DataTables' extensible pagination mechanism, the <code>pagingType</code> option. Supported pagination types are: <code>simple</code>, <code>simple_numbers</code>, <code>full</code> and <code>full_numbers</code>. This example shows <code>simple</code> pagination type.
+						DataTables allows ordering by <code>multiple columns</code> at the same time, which can be activated in a number of different ways: - user shift click on a column; - on a per-column basis; - using the <code>columns.orderData</code> option. The example below shows the first column having a secondary order applied to the second column in the table, vice-versa for the second column being tied directly to the first and the salary column to the first name column.
 					</div>
 
-					<table class="table datatable-pagination">
+					<table class="table datatable-multi-sorting">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -2000,13 +2041,13 @@
 						</tbody>
 					</table>
 				</div>
-				<!-- /pagination types -->
+				<!-- /multi column ordering -->
 
 
-				<!-- State saving --
+				<!-- Order direction sequence control --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">State saving</h5>
+						<h5 class="card-title">Order direction sequence control</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2017,10 +2058,10 @@
 					</div>
 
 					<div class="card-body">
-						DataTables has the option of being able to <code>save the state</code> of a table: its paging position, ordering state etc., so that is can be restored when the user reloads a page, or comes back to the page after visiting a sub-page. This state saving ability is enabled by the <code>stateSave</code> option. The <code>duration</code> for which the saved state is valid can be set using the <code>stateDuration</code> initialisation parameter (2 hours by default).
+						At times you may wish to change the default ordering direction sequence for columns to be <code>'descending'</code> rather than default <code>ascending</code>. This can be done through the use of the <code>columns.orderSequence</code> initialisation parameter. The example below shows: Columns 1, 2 - default ordering; Column 3 - ascending ordering only; Column 4 - descending ordering, followed by ascending and then ascending again; Column 5 - descending ordering only.
 					</div>
 
-					<table class="table datatable-save-state">
+					<table class="table datatable-sequence-control">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -2365,13 +2406,13 @@
 						</tbody>
 					</table>
 				</div>
-				<!-- /state saving -->
+				<!-- /order direction sequence control -->
 
 
-				<!-- Scrollable datatable --
+				<!-- Complex headers with sorting --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Scrollable datatable</h5>
+						<h5 class="card-title">Complex headers with sorting</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2382,355 +2423,149 @@
 					</div>
 
 					<div class="card-body">
-						This example shows the DataTables table body <code>scrolling</code> in the <code>vertical</code> direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here. Note that this is not mandatory, it will work just fine with pagination enabled as well!.
+						Complex headers (using colspan / rowspan) can be used to <code>group</code> columns of similar information in DataTables, creating a very powerful visual effect. In addition to the basic behaviour, DataTables can also take <code>colspan</code> and <code>rowspans</code> into account when working with hidden columns. The example below shows a header spanning multiple cells over the contact information with sorting, with one of the columns that the span covers being hidden.
 					</div>
 
-					<table class="table datatable-scroll-y" width="100%">
+					<table class="table table-bordered datatable-complex-header">
 						<thead>
 							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
+	                            <th rowspan="2">Name</th>
+	                            <th colspan="2">HR Information</th>
+	                            <th colspan="3">Contact</th>
+	                        </tr>
+	                        <tr>
+	                            <th>Position</th>
+	                            <th>Salary</th>
+	                            <th>Office</th>
+	                            <th>Extn.</th>
+	                            <th>E-mail</th>
+	                        </tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
+				            <tr>
+                                <td>Tiger Nixon</td>
+	                            <td>System Architect</td>
+	                            <td>$320,800</td>
+	                            <td>Edinburgh</td>
+	                            <td>5421</td>
+	                            <td>t.nixon@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Garrett Winters</td>
+	                            <td>Accountant</td>
+	                            <td>$170,750</td>
+	                            <td>Tokyo</td>
+	                            <td>8422</td>
+	                            <td>g.winters@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Ashton Cox</td>
+	                            <td>Junior Technical Author</td>
+	                            <td>$86,000</td>
+	                            <td>San Francisco</td>
+	                            <td>1562</td>
+	                            <td>a.cox@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Cedric Kelly</td>
+	                            <td>Senior Javascript Developer</td>
+	                            <td>$433,060</td>
+	                            <td>Edinburgh</td>
+	                            <td>6224</td>
+	                            <td>c.kelly@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Airi Satou</td>
+	                            <td>Accountant</td>
+	                            <td>$162,700</td>
+	                            <td>Tokyo</td>
+	                            <td>5407</td>
+	                            <td>a.satou@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Brielle Williamson</td>
+	                            <td>Integration Specialist</td>
+	                            <td>$372,000</td>
+	                            <td>New York</td>
+	                            <td>4804</td>
+	                            <td>b.williamson@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Herrod Chandler</td>
+	                            <td>Sales Assistant</td>
+	                            <td>$137,500</td>
+	                            <td>San Francisco</td>
+	                            <td>9608</td>
+	                            <td>h.chandler@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Rhona Davidson</td>
+	                            <td>Integration Specialist</td>
+	                            <td>$327,900</td>
+	                            <td>Tokyo</td>
+	                            <td>6200</td>
+	                            <td>r.davidson@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Colleen Hurst</td>
+	                            <td>Javascript Developer</td>
+	                            <td>$205,500</td>
+	                            <td>San Francisco</td>
+	                            <td>2360</td>
+	                            <td>c.hurst@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Sonya Frost</td>
+	                            <td>Software Engineer</td>
+	                            <td>$103,600</td>
+	                            <td>Edinburgh</td>
+	                            <td>1667</td>
+	                            <td>s.frost@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Jena Gaines</td>
+	                            <td>Office Manager</td>
+	                            <td>$90,560</td>
+	                            <td>London</td>
+	                            <td>3814</td>
+	                            <td>j.gaines@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Quinn Flynn</td>
+	                            <td>Support Lead</td>
+	                            <td>$342,000</td>
+	                            <td>Edinburgh</td>
+	                            <td>9497</td>
+	                            <td>q.flynn@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Charde Marshall</td>
+	                            <td>Regional Director</td>
+	                            <td>$470,600</td>
+	                            <td>San Francisco</td>
+	                            <td>6741</td>
+	                            <td>c.marshall@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Haley Kennedy</td>
+	                            <td>Senior Marketing Designer</td>
+	                            <td>$313,500</td>
+	                            <td>London</td>
+	                            <td>3597</td>
+	                            <td>h.kennedy@datatables.net</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Tatyana Fitzpatrick</td>
+	                            <td>Regional Director</td>
+	                            <td>$385,750</td>
+	                            <td>London</td>
+	                            <td>1965</td>
+	                            <td>t.fitzpatrick@datatables.net</td>
+	                        </tr>
+				        </tbody>
 					</table>
 				</div>
-				<!-- /scrollable datatable -->
+				<!-- /complex headers with sorting -->
 
 			</div>
 			<!-- /content area -->

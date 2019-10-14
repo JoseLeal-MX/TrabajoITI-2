@@ -960,36 +960,34 @@
 						<!-- /extensions -->
 
 						<!-- Tables -->
-						<!--li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
+						<!--li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">TABLAS</div> <i class="icon-menu" title="Tables"></i></li-->
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
-								<li class="nav-item"><a href="table_basic.html" class="nav-link">Basic examples</a></li>
-								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Table sizing</a></li>
-								<li class="nav-item"><a href="table_borders.html" class="nav-link">Table borders</a></li>
-								<li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
+								<li class="nav-item"><a href="table_basic.html" class="nav-link">Lista de empresas</a></li>
+								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Actualizar datos de empresa</a></li>
+								<li class="nav-item"><a href="table_borders.html" class="nav-link">Eliminar empresas</a></li>
+								<!--li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li-->
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
 								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Lista de empleados</a></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Actualizar empleados</a></li>
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link active">Registrar empleados</a></li>
+								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Actualizar lista de empleados</a></li>
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Agregar empleados</a></li>
 								<!--li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
-								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li>
-								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>
+								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li-->
+								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Vacaciones</a></li>
 							</ul>
-						</li-->
-
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						</li>
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
 								<li class="nav-item"><a href="datatable_api.html" class="nav-link active">Departamentos</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Actualizar lista de apartamentos</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Agregar departamentos</a></li>
-
 						<!--li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">
@@ -1027,11 +1025,11 @@
 								<li class="nav-item"><a href="handsontable_context.html" class="nav-link">Context menu</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-versions"></i> <span>Responsive tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Responsive tables">
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
-								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link active">Responsive data tables</a></li>
+								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
 						</li>
 						<!-- /tables -->
@@ -1218,7 +1216,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Responsive</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Actualizar departamentos</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1276,7 +1274,7 @@
 				<!-- Basic responsive configuration -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Configuration option</h5>
+						<h5 class="card-title">Dedicado a actualizar datos de departamentos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,7 +1285,7 @@
 					</div>
 
 					<div class="card-body">
-						The <code>Responsive</code> extension for DataTables can be applied to a DataTable in one of two ways; with a specific <code>class name</code> on the table, or using the DataTables initialisation options. This method shows the latter, with the <code>responsive</code> option being set to the boolean value <code>true</code>. The <code>responsive</code> option can be given as a boolean value, or as an object with configuration options.
+						Si algún departamento que se ha unido a la empresa en determinado momento tiene algún dato erroneo, usted tiene esta opción para corregir tal dato equivocado y ponerlo al corriente en cuanto al trabajo. Llene los campos solicitados para actualizar la información.
 					</div>
 
 					<table class="table datatable-responsive">
@@ -1413,11 +1411,48 @@
 								</td>
 							</tr>
 
-							<tr>
-									<td>Agregar departamentos</td>
-									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_vertical">Launch <i class="icon-play3 ml-2"></i></button></td>
-									<td>Opción más rudimentaria para poder añadir un determinado departamento a la base de datos de la empresa. <code>Proceso experimental</code></td>
-							</tr>
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre del departamento</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Dirección General">
+									</div>
+							</div>
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Clave</label>
+									<div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="ej. número aleatorio - año actual (1980-2019)">
+									</div>
+							</div>
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Número de empleados</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Con cuantos empleados cuenta su departamento">
+									</div>
+							</div>			
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Especialidad</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. A qué se dedica su departamento">
+									</div>
+							</div>
+											
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Ubicación</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. Ubicación dentro de la empresa">
+									</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-4">
+								<div class="card card-body border-top-primary">
+		                   		<button type="button" class="btn btn-primary">Actualizar</button>
+	                   			</div>
+								</div>
+							</div>
 
 							<!--tr>
 								<td>Maxine</td>
