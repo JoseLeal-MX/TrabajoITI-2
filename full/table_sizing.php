@@ -399,7 +399,7 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menú principal</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
+							<a href="index2.php" class="nav-link active">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
@@ -958,9 +958,9 @@
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
-								<li class="nav-item"><a href="table_basic.html" class="nav-link">Lista de empresas</a></li>
-								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Actualizar datos de empresa</a></li>
-								<li class="nav-item"><a href="table_borders.html" class="nav-link">Eliminar empresas</a></li>
+								<li class="nav-item"><a href="table_basic.php" class="nav-link">Lista de empresas</a></li>
+								<li class="nav-item"><a href="table_sizing.php" class="nav-link">Actualizar datos de empresa</a></li>
+								<li class="nav-item"><a href="table_borders.php" class="nav-link">Eliminar empresas</a></li>
 								<!--li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
@@ -968,20 +968,20 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Lista de empleados</a></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Actualizar lista de empleados</a></li>
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Agregar empleados</a></li>
+								<li class="nav-item"><a href="datatable_basic.php" class="nav-link">Lista de empleados</a></li>
+								<li class="nav-item"><a href="datatable_styling.php" class="nav-link">Actualizar lista de empleados</a></li>
+								<li class="nav-item"><a href="datatable_advanced.php" class="nav-link">Agregar empleados</a></li>
 								<!--li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
 								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li-->
-								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Vacaciones</a></li>
+								<li class="nav-item"><a href="datatable_data_sources.php" class="nav-link">Vacaciones</a></li>
 							</ul>
 						</li>
                         <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_api.html" class="nav-link active">Departamentos</a></li>
-								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Actualizar lista de apartamentos</a></li>
-								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Agregar departamentos</a></li>
+								<li class="nav-item"><a href="datatable_api.php" class="nav-link active">Departamentos</a></li>
+								<li class="nav-item"><a href="datatable_responsive.php" class="nav-link">Actualizar lista de apartamentos</a></li>
+								<li class="nav-item"><a href="datatable_sorting.php" class="nav-link">Agregar departamentos</a></li>
 						<!--li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">
