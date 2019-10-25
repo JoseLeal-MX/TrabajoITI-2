@@ -397,12 +397,13 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menú principal</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.php" class="nav-link active">
+							<a href="index.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
 						</li>
@@ -471,7 +472,7 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<!--li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
 						<!-- /main -->
 
 						<!-- Forms --
@@ -965,6 +966,10 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li-->
+
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TRANSPORTE</span></a>
+							<li class="nav-item"><a href="tabla_transporte.php>" class="nav-link">Pago de transporte escolar</a></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
@@ -1210,7 +1215,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Actualizar datos de empresa</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Pago de transporte escolar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1227,8 +1232,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="table_sizing.html" class="breadcrumb-item">Tables</a>
-							<span class="breadcrumb-item active">Sizing</span>
+							<a href="table_styling.html" class="breadcrumb-item">Tables</a>
+							<span class="breadcrumb-item active">Styling</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1265,10 +1270,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Extra large table -->
+				<!-- Default styling -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Actualizar datos de empresas</h5>
+						<h5 class="card-title">Personas que usen transporte</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1279,266 +1284,60 @@
 					</div>
 
 					<div class="card-body">
-						Puede que usted, al momento de haber registrado a una empresa, haya ingresado algún dato incorrecto, por lo que se recomienda corregirlo en caso de haberlo cometido, para evitar problemas a futuro
+						Bienvenido. En este apartado, usted puede registrar a las personas que ustén usando el servicio de transporte que ofrece la empresa Transpais. Llene el formulario que se le indica a continuación.
 					</div>
 
-					<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Ubicación</th>
-									<th>CEO (Director(es) Ejecutivo)</th>
-									<th>Correo</th>
-									<th>Representante legal</th>
-									<th>RFC de empresa</th>
-									<th>¿Prestaciones?</th>
-									<th>¿Acciones en la bolsa?</th>
-									<th>Valor de acciones</th>
-									<th>Situación jurídica</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Lehman Brothers for ITI</td>
-									<td>Nueva York #4121, Libramiento Naciones Unidas</td>
-									<td>Arturo Lehman & Moisés Lehman</td>
-									<td>lehmanbrothersiti@lehman.com</td>
-									<td>Abraham Ramírez</td>
-									<td>LBI7010114LS</td>
-									<td>Seguro Popular, seguro de vida, vacaciones</td>
-									<td>SÍ</td>
-									<td>MXN $17.10</td>
-									<th>Bancarrota</th>
-								</tr>
-								<tr>
-									<td>Cisco Systems</td>
-									<td>Nueva York #4121, Libramiento Naciones Unidas, TAMPS</td>
-									<td>Chuck Robbins</td>
-									<td>Sin correo</td>
-									<td>Mark Chandler</td>
-									<td>CSY841201WL1</td>
-									<td>Vcaciones, Seguro médico</td>
-									<td>SÍ</td>
-									<td>MXN $907</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>Lenovo</td>
-									<td>Paseo de los Tamarindos #400, Bosque de las Lomas, CDMX</td>
-									<td>Yang Yuanqing</td>
-									<td>lehmanbrothersiti@lehman.com</td>
-									<td>Yong Rui</td>
-									<td>LNV841101SW1</td>
-									<td>Vacaciones</td>
-									<td>SÍ</td>
-									<td>MXN $140</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>DELL</td>
-									<td>Paseo de la Reforma #2620, Loma Alta, CDMX</td>
-									<td>Michael Dell</td>
-									<td>dellcontact@dell.com</td>
-									<td>Sin datos</td>
-									<td>DLL831104SQZ</td>
-									<td>Vacaciones, seguro médico, prima vacacional</td>
-									<td>SÍ</td>
-									<td>MXN $905</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>HP Inc.</td>
-									<td>Paseo de la Reforma, CDMX</td>
-									<td>Dion Wisler</td>
-									<td>hpclientsupport@hpinc.com</td>
-									<td>Kim M. Rivera</td>
-									<td>HPI151101MW1</td>
-									<td>Vacaciones pagas, seguro médico</td>
-									<td>SÍ</td>
-									<td>MXN $315</td>
-									<th>Operando</th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre de la empresa</label>
+					<div class="form-group row">
+									<label class="col-form-label col-lg-2">Número de matrícula</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="ej. Lehman Brothers ITI">
+										<input type="text" class="form-control" placeholder="ej. 1930669">
 									</div>
 							</div>
 
 							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Ubicación</label>
+									<label class="col-form-label col-lg-2">Nombre completo</label>
 									<div class="col-lg-10">
-									<input type="text" class="form-control">
+									<input type="text" class="form-control" placeholder="ej. Vladimir Lenin Trotsky">
 									</div>
 							</div>
 
 							<div class="form-group row">
-									<label class="col-form-label col-lg-2">CEO</label>
+									<label class="col-form-label col-lg-2">Carrera que cursa</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="ej. Introducción a las Tecnologías de la Información">
 									</div>
 							</div>			
 
 							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo electrónico</label>
+									<label class="col-form-label col-lg-2">Fecha de pago</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="Formato 'dd/mm/aaaa'">
 									</div>
 							</div>
 											
 							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Representante legal</label>
+									<label class="col-form-label col-lg-2">Ruta elegida</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="ej. Soriana Tamatán, Libertad, etc.">
 									</div>
 							</div>
 					
 							<div class="form-group row">
-									<label class="col-form-label col-lg-2">RFC</label>
+									<label class="col-form-label col-lg-2">Horario</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="ej. 7:00 am">
 									</div>
 							</div>
 
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Prestaciones</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
+							<div class="row">
+								<div class="col-lg-4">
+								<div class="card card-body border-top-primary">
+		                    	<button type="button" class="btn btn-primary">Registrar</button>
+	                    		</div>
+								</div>
 							</div>
 
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">¿Acciones en la bolsa?</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Valor de acciones</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Situación jurídica</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-								<div class="row">
-					<div class="col-lg-4">
-						<div class="card card-body border-top-primary">
-		                    	<button type="button" class="btn btn-primary">Actualizar</button>
-	                    	</div>
-						</div>
-					</div>
-				<!-- /extra large table -->
-
-
-				<!-- Large table --
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Large table</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						Example of <code>large</code> table sizing using <code>.table-lg</code> class added to the <code>.table</code>. All table rows have <code>53px</code> height in REM units.
-					</div>
-
-					<div class="table-responsive">
-						<table class="table table-lg">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Username</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Eugene</td>
-									<td>Kopyov</td>
-									<td>@Kopyov</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Victoria</td>
-									<td>Baker</td>
-									<td>@Vicky</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>James</td>
-									<td>Alexander</td>
-									<td>@Alex</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Franklin</td>
-									<td>Morrison</td>
-									<td>@Frank</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<!-- /large table -->
-
-
-				<!-- Default table --
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Default table</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						Example of <code>default</code> table sizing. This table doesn't require any additional classes in <code>.table</code> container. All table rows have <code>44px</code> height in REM units.
-					</div>
-
-					<div class="table-responsive">
+					<!--div class="table-responsive">
 						<table class="table">
 							<thead>
 								<tr>
@@ -1573,35 +1372,25 @@
 									<td>Morrison</td>
 									<td>@Frank</td>
 								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
 							</tbody>
+							<tfoot>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</tfoot>
 						</table>
 					</div>
 				</div>
-				<!-- /default table -->
+				<!-- /default styling -->
 
 
-				<!-- Small table --
+				<!-- Table header styling --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Small table</h5>
+						<h5 class="card-title">Table header styling</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1612,11 +1401,319 @@
 					</div>
 
 					<div class="card-body">
-						Example of <code>small</code> table sizing using <code>.table-sm</code> class added to the <code>.table</code>. All table rows have <code>40px</code> height in REM units.
+						Example of a custom table <code>header</code> styling. Table header supports default contextual and custom background colors available in <a href="colors_primary.html">custom color system</a>. To use custom color in the table header, add <code>.bg-*</code> class to the header row. All border and text colors will be automatically adjusted.
 					</div>
 
 					<div class="table-responsive">
-						<table class="table table-sm">
+						<table class="table">
+							<thead>
+								<tr class="bg-blue">
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Eugene</td>
+									<td>Kopyov</td>
+									<td>@Kopyov</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Victoria</td>
+									<td>Baker</td>
+									<td>@Vicky</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>James</td>
+									<td>Alexander</td>
+									<td>@Alex</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Franklin</td>
+									<td>Morrison</td>
+									<td>@Frank</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /table header styling -->
+
+
+				<!-- Table footer styling --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Table footer styling</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Example of a custom table <code>footer</code> styling. Table footer supports custom background colors available in <a href="colors_primary.html">custom color system</a>. To use custom color in the table footer, add <code>.bg-*</code> class to the footer row. All border and text colors will be autocatically adjusted.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Eugene</td>
+									<td>Kopyov</td>
+									<td>@Kopyov</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Victoria</td>
+									<td>Baker</td>
+									<td>@Vicky</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>James</td>
+									<td>Alexander</td>
+									<td>@Alex</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Franklin</td>
+									<td>Morrison</td>
+									<td>@Frank</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr class="bg-teal-400">
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<!-- /table footer styling -->
+
+
+				<!-- Contextual classes --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Contextual classes</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Example of contextual classes for table <code>rows</code>. Contextual classes are used to color table rows or individual cells. These classes come with Bootstrap by default and have much lighter colors than in custom template colors.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+		                    <thead>
+		                        <tr>
+		                            <th>#</th>
+		                            <th>Product</th>
+		                            <th>Payment Taken</th>
+		                            <th>Status</th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+		                        <tr class="table-success">
+		                            <td>1</td>
+		                            <td>TB - Monthly</td>
+		                            <td>01/04/2012</td>
+		                            <td>Approved</td>
+		                        </tr>
+		                        <tr>
+		                            <td>1</td>
+		                            <td>TB - Monthly</td>
+		                            <td>01/04/2012</td>
+		                            <td>Approved</td>
+		                        </tr>
+		                        <tr class="table-danger">
+		                            <td>2</td>
+		                            <td>TB - Monthly</td>
+		                            <td>02/04/2012</td>
+		                            <td>Declined</td>
+		                        </tr>
+		                        <tr>
+		                            <td>2</td>
+		                            <td>TB - Monthly</td>
+		                            <td>02/04/2012</td>
+		                            <td>Declined</td>
+		                        </tr>
+		                        <tr class="table-warning">
+		                            <td>3</td>
+		                            <td>TB - Monthly</td>
+		                            <td>03/04/2012</td>
+		                            <td>Pending</td>
+		                        </tr>
+		                        <tr>
+		                            <td>3</td>
+		                            <td>TB - Monthly</td>
+		                            <td>03/04/2012</td>
+		                            <td>Pending</td>
+		                        </tr>
+		                        <tr class="table-active">
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>04/04/2012</td>
+		                            <td>Call in to confirm</td>
+		                        </tr>
+		                        <tr>
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>04/04/2012</td>
+		                            <td>Call in to confirm</td>
+		                        </tr>
+		                        <tr class="table-info">
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>05/04/2012</td>
+		                            <td>Information</td>
+		                        </tr>
+		                        <tr>
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>05/04/2012</td>
+		                            <td>Information</td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+					</div>
+				</div>
+				<!-- /contextual classes -->
+				
+
+				<!-- Custom row colors --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom row colors</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Example of <code>custom colors</code> for table rows. Add one of the custom colors from the template color system to any table row for additional highlighting. Unlike contextual classes, these colors are much stronger. View all <a href="colors_primary.html">available colors here &rarr;</a>.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+		                    <thead>
+		                        <tr>
+		                            <th>#</th>
+		                            <th>Product</th>
+		                            <th>Payment Taken</th>
+		                            <th>Status</th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+		                        <tr class="bg-primary">
+		                            <td>1</td>
+		                            <td>TB - Monthly</td>
+		                            <td>01/04/2012</td>
+		                            <td>Approved</td>
+		                        </tr>
+		                        <tr>
+		                            <td>1</td>
+		                            <td>TB - Monthly</td>
+		                            <td>01/04/2012</td>
+		                            <td>Approved</td>
+		                        </tr>
+		                        <tr class="bg-danger">
+		                            <td>2</td>
+		                            <td>TB - Monthly</td>
+		                            <td>02/04/2012</td>
+		                            <td>Declined</td>
+		                        </tr>
+		                        <tr>
+		                            <td>2</td>
+		                            <td>TB - Monthly</td>
+		                            <td>02/04/2012</td>
+		                            <td>Declined</td>
+		                        </tr>
+		                        <tr class="bg-success">
+		                            <td>3</td>
+		                            <td>TB - Monthly</td>
+		                            <td>03/04/2012</td>
+		                            <td>Pending</td>
+		                        </tr>
+		                        <tr>
+		                            <td>3</td>
+		                            <td>TB - Monthly</td>
+		                            <td>03/04/2012</td>
+		                            <td>Pending</td>
+		                        </tr>
+		                        <tr class="bg-warning">
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>04/04/2012</td>
+		                            <td>Call in to confirm</td>
+		                        </tr>
+		                        <tr>
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>04/04/2012</td>
+		                            <td>Call in to confirm</td>
+		                        </tr>
+		                        <tr class="bg-info">
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>05/04/2012</td>
+		                            <td>Information</td>
+		                        </tr>
+		                        <tr>
+		                            <td>4</td>
+		                            <td>TB - Monthly</td>
+		                            <td>05/04/2012</td>
+		                            <td>Information</td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+					</div>
+				</div>
+				<!-- /custom row colors -->
+
+
+				<!-- Custom table color --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom table color</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Example of a table with custom <code>background</code> color. Any table could have different background colors available in <a href="colors_primary.html">custom color system</a>. To use one of these colors add <code>.bg-*</code> color class to the table with <code>.table</code> class.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-dark bg-slate-600">
 							<thead>
 								<tr>
 									<th>#</th>
@@ -1650,35 +1747,17 @@
 									<td>Morrison</td>
 									<td>@Frank</td>
 								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<!-- /small table -->
+				<!-- /custom table color -->
 
 
-				<!-- Mini table --
+				<!-- Colored table options --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Mini table</h5>
+						<h5 class="card-title">Colored table options</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1689,11 +1768,11 @@
 					</div>
 
 					<div class="card-body">
-						Example of <code>mini</code> table sizing using <code>.table-xs</code> class added to the <code>.table</code>. All table rows have <code>36px</code> height in REM units.
+						Table with custom background color supports all default table layouts and options. In this example our table displays all possible borders, striped rows and changes background color on row hover. All border, row and text colors are adjusted automatically.
 					</div>
 
 					<div class="table-responsive">
-						<table class="table table-xs">
+						<table class="table table-dark table-bordered table-striped table-hover bg-info-700">
 							<thead>
 								<tr>
 									<th>#</th>
@@ -1727,29 +1806,129 @@
 									<td>Morrison</td>
 									<td>@Frank</td>
 								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /colored table options -->
+
+
+				<!-- Color combination --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Color combination</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						This example demonstrates <code>combination</code> of colors, added to the table and table header. Here we have one general color added to the <code>&lt;table></code> and highlighted table header with another color added to the header <code>row</code>. Body and footer rows are also support this option.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-dark bg-teal">
+							<thead>
+								<tr class="bg-teal-700">
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
 								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
+									<td>1</td>
+									<td>Eugene</td>
+									<td>Kopyov</td>
+									<td>@Kopyov</td>
 								</tr>
 								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
+									<td>2</td>
+									<td>Victoria</td>
+									<td>Baker</td>
+									<td>@Vicky</td>
 								</tr>
 								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
+									<td>3</td>
+									<td>James</td>
+									<td>Alexander</td>
+									<td>@Alex</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Franklin</td>
+									<td>Morrison</td>
+									<td>@Frank</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<!-- /mini table -->
+				<!-- /color combination -->
+
+
+				<!-- Inside colored panel --
+				<div class="card bg-indigo-400">
+					<div class="card-header header-elements-inline">
+						<h6 class="card-title">Inside colored panel</h6>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Example of a basic table placed inside the panel with custom background color. This panel doesn't have any color classes and automatically inherits border and text colors from the colored panel styles. Color combination are also supported.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-dark bg-indigo-400">
+							<thead>
+								<tr class="bg-indigo-600">
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Eugene</td>
+									<td>Kopyov</td>
+									<td>@Kopyov</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Victoria</td>
+									<td>Baker</td>
+									<td>@Vicky</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>James</td>
+									<td>Alexander</td>
+									<td>@Alex</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Franklin</td>
+									<td>Morrison</td>
+									<td>@Frank</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /inside colored panel -->
 
 			</div>
 			<!-- /content area -->

@@ -407,7 +407,7 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menú principal</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index2.php" class="nav-link active">
+							<a href="index.php" class="nav-link active">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
@@ -973,7 +973,11 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li-->
-						<li class="nav-item nav-item-submenu">
+
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TRANSPORTE</span></a>
+							<li class="nav-item"><a href="tabla_transporte.php" class="nav-link">Pago de transporte escolar</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
 								<li class="nav-item"><a href="datatable_basic.php" class="nav-link">Lista de empleados</a></li>
@@ -981,15 +985,30 @@
 								<li class="nav-item"><a href="datatable_advanced.php" class="nav-link">Agregar empleados</a></li>
 								<!--li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
 								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li-->
-								<li class="nav-item"><a href="datatable_data_sources.php" class="nav-link">Vacaciones</a></li>
+								<li class="nav-item"><a href="datatable_data_sources2.html" class="nav-link">Vacaciones</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_scroller.php" class="nav-link">Listado de tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_row_reorder2.php" class="nav-link">Actualizar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_reorder2.php" class="nav-link">Agregar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_key_table2.php" class="nav-link">Eliminar tutorías</a></li>
                         <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
 								<li class="nav-item"><a href="datatable_api.php" class="nav-link active">Departamentos</a></li>
-								<li class="nav-item"><a href="datatable_responsive.php" class="nav-link">Actualizar lista de apartamentos</a></li>
+								<li class="nav-item"><a href="datatable_responsive2.php" class="nav-link">Actualizar lista de apartamentos</a></li>
 								<li class="nav-item"><a href="datatable_sorting.php" class="nav-link">Agregar departamentos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>ALUMNOS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_fixed_header.php" class="nav-link active">Listado de alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_fixed_columns.php" class="nav-link">Actualizar alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_colvis.php" class="nav-link">Agregar alumnos</a></li>
 						<!--li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">

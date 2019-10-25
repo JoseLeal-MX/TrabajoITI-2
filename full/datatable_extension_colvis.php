@@ -24,11 +24,11 @@
 
 	<!-- Theme JS files -->
 	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/tables/datatables/extensions/key_table.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_extension_key_table.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_extension_colvis.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -404,14 +404,14 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">
+							<a href="index.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
 									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
-						</li>
+						<!--/li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -480,7 +480,7 @@
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
 						<!-- /main -->
 
-						<!-- Forms -->
+						<!-- Forms --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
@@ -537,7 +537,7 @@
 						</li>
 						<!-- /forms -->
 
-						<!-- Components -->
+						<!-- Components --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -642,7 +642,7 @@
 						</li>
 						<!-- /components -->
 
-						<!-- Layout -->
+						<!-- Layout --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -807,7 +807,7 @@
 						</li>
 						<!-- /layout -->
 
-						<!-- Data visualization -->
+						<!-- Data visualization --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -911,7 +911,7 @@
 						</li>
 						<!-- /data visualization -->
 
-						<!-- Extensions -->
+						<!-- Extensions --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -960,29 +960,54 @@
 						<!-- /extensions -->
 
 						<!-- Tables -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
+						<!--li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">TABLAS</div> <i class="icon-menu" title="Tables"></i></li-->
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
-								<li class="nav-item"><a href="table_basic.html" class="nav-link">Basic examples</a></li>
-								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Table sizing</a></li>
-								<li class="nav-item"><a href="table_borders.html" class="nav-link">Table borders</a></li>
-								<li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
+								<li class="nav-item"><a href="table_basic.php" class="nav-link">Lista de empresas</a></li>
+								<li class="nav-item"><a href="table_sizing.php" class="nav-link">Actualizar datos de empresa</a></li>
+								<li class="nav-item"><a href="table_borders.php" class="nav-link">Eliminar empresas</a></li>
+								<!--li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
+						</li-->
+
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TRANSPORTE</span></a>
+							<li class="nav-item"><a href="tabla_transporte.php" class="nav-link">Pago de transporte escolar</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Basic initialization</a></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
-								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
-								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li>
-								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>
+								<li class="nav-item"><a href="datatable_basic.php" class="nav-link">Lista de empleados</a></li>
+								<li class="nav-item"><a href="datatable_styling.php" class="nav-link">Actualizar lista de empleados</a></li>
+								<li class="nav-item"><a href="datatable_advanced.php" class="nav-link">Agregar empleados</a></li>
+								<!--li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
+								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li-->
+								<li class="nav-item"><a href="datatable_data_sources2.html" class="nav-link">Vacaciones</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_scroller.php" class="nav-link">Listado de tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_row_reorder2.php" class="nav-link">Actualizar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_reorder2.php" class="nav-link">Agregar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_key_table2.php" class="nav-link">Eliminar tutorías</a></li>
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>DEPARTAMENTOS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_api.php" class="nav-link active">Departamentos</a></li>
+								<li class="nav-item"><a href="datatable_responsive2.php" class="nav-link">Actualizar lista de apartamentos</a></li>
+								<li class="nav-item"><a href="datatable_sorting.php" class="nav-link">Agregar departamentos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>ALUMNOS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_fixed_header.php" class="nav-link active">Listado de alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_fixed_columns.php" class="nav-link">Actualizar alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_colvis.php" class="nav-link">Agregar alumnos</a></li>
+						<!--li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">
 								<li class="nav-item"><a href="datatable_extension_reorder.html" class="nav-link">Columns reorder</a></li>
@@ -990,7 +1015,7 @@
 								<li class="nav-item"><a href="datatable_extension_fixed_columns.html" class="nav-link">Fixed columns</a></li>
 								<li class="nav-item"><a href="datatable_extension_fixed_header.html" class="nav-link">Fixed header</a></li>
 								<li class="nav-item"><a href="datatable_extension_autofill.html" class="nav-link">Auto fill</a></li>
-								<li class="nav-item"><a href="datatable_extension_key_table.html" class="nav-link active">Key table</a></li>
+								<li class="nav-item"><a href="datatable_extension_key_table.html" class="nav-link">Key table</a></li>
 								<li class="nav-item"><a href="datatable_extension_scroller.html" class="nav-link">Scroller</a></li>
 								<li class="nav-item"><a href="datatable_extension_select.html" class="nav-link">Select</a></li>
 								<li class="nav-item nav-item-submenu">
@@ -1002,7 +1027,7 @@
 										<li class="nav-item"><a href="datatable_extension_buttons_html5.html" class="nav-link">HTML5 buttons</a></li>
 									</ul>
 								</li>
-								<li class="nav-item"><a href="datatable_extension_colvis.html" class="nav-link">Columns visibility</a></li>
+								<li class="nav-item"><a href="datatable_extension_colvis.html" class="nav-link active">Columns visibility</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -1028,7 +1053,7 @@
 						</li>
 						<!-- /tables -->
 
-						<!-- Page kits -->
+						<!-- Page kits --
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1210,7 +1235,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Key Table</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Actualizar alumnops</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1227,8 +1252,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_extension_key_table.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Key table</span>
+							<a href="datatable_extension_colvis.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Columns visibility</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1265,10 +1290,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic initialization -->
+				<!-- Basic example -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Basic initialization</h5>
+						<h5 class="card-title">Basic example</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1279,10 +1304,54 @@
 					</div>
 
 					<div class="card-body">
-						KeyTable allows you to use keyboard navigation on a DataTables enhanced table, like an Excel spreadsheet. The focused cell is shown through the CSS class (<code>focus</code> - configurable using <code>keys.className</code>) which in the case below is simply a blue outline. Use your keyboard's arrow keys and click the cells in the table to navigate.
+						Si un dato del alumno está agregado en la base de datos de manera incorrecta, este espacio es ideal para corregirlo y actualizarlo.
 					</div>
 
-					<table class="table datatable-key-basic">
+					<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre</label>
+									<div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="ej. José Leal">
+									</div>
+							</div>
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Edad</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. 18 (hablando de años)">
+									</div>
+							</div>			
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Matrícula</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. 1930669">
+									</div>
+							</div>
+											
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Carrera</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="Nombre de la carrera">
+									</div>
+							</div>
+
+							<div class="form-group row">
+									<label class="col-form-label col-lg-2">Correo</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="ej. example@example.com">
+									</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-4">
+								<div class="card card-body border-top-primary">
+		                   		<button type="button" class="btn btn-primary" a href="datatable_extension_fixed_header.html">Actualizar</button>
+	                   			</div>
+								</div>
+							</div>
+
+
+					<!--table class="table datatable-colvis-basic">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -1290,7 +1359,7 @@
 								<th>Job Title</th>
 								<th>DOB</th>
 								<th>Status</th>
-								<th class="text-center">Actions</th>
+								<th>Salary</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -1300,21 +1369,7 @@
 								<td>Traffic Court Referee</td>
 								<td>22 Jun 1972</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$85,600</td>
 							</tr>
 							<tr>
 								<td>Jackelyn</td>
@@ -1322,21 +1377,7 @@
 								<td><a href="#">Airline Transport Pilot</a></td>
 								<td>3 Oct 1981</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$106,450</td>
 							</tr>
 							<tr>
 								<td>Aura</td>
@@ -1344,21 +1385,7 @@
 								<td>Business Services Sales Representative</td>
 								<td>19 Apr 1969</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$237,500</td>
 							</tr>
 							<tr>
 								<td>Nathalie</td>
@@ -1366,21 +1393,7 @@
 								<td>Drywall Stripper</td>
 								<td>13 Dec 1977</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$198,500</td>
 							</tr>
 							<tr>
 								<td>Sharan</td>
@@ -1388,21 +1401,7 @@
 								<td>Aviation Tactical Readiness Officer</td>
 								<td>30 Dec 1991</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$470,600</td>
 							</tr>
 							<tr>
 								<td>Maxine</td>
@@ -1410,21 +1409,7 @@
 								<td><a href="#">Business Services Sales Representative</a></td>
 								<td>17 Oct 1987</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$90,560</td>
 							</tr>
 							<tr>
 								<td>Sylvia</td>
@@ -1432,21 +1417,7 @@
 								<td>Hemodialysis Technician</td>
 								<td>11 Nov 1983</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$103,600</td>
 							</tr>
 							<tr>
 								<td>Lizzee</td>
@@ -1454,21 +1425,7 @@
 								<td>Technical Services Librarian</td>
 								<td>1 Nov 1961</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$205,500</td>
 							</tr>
 							<tr>
 								<td>Kennedy</td>
@@ -1476,21 +1433,7 @@
 								<td>Senior Marketing Designer</td>
 								<td>18 Dec 1960</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$137,500</td>
 							</tr>
 							<tr>
 								<td>Chantal</td>
@@ -1498,21 +1441,7 @@
 								<td>Technical Services Librarian</td>
 								<td>10 Jan 1980</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$372,000</td>
 							</tr>
 							<tr>
 								<td>Delma</td>
@@ -1520,21 +1449,7 @@
 								<td>Lead Brand Manager</td>
 								<td>21 Dec 1968</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$162,700</td>
 							</tr>
 							<tr>
 								<td>Roland</td>
@@ -1542,21 +1457,7 @@
 								<td><a href="#">Senior Program Developer</a></td>
 								<td>5 Jun 1986</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$433,060</td>
 							</tr>
 							<tr>
 								<td>Coy</td>
@@ -1564,21 +1465,7 @@
 								<td>Customer Service Operator</td>
 								<td>12 Oct 1982</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$86,000</td>
 							</tr>
 							<tr>
 								<td>Maxwell</td>
@@ -1586,21 +1473,7 @@
 								<td>Regional Representative</td>
 								<td>25 Feb 1988</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$130,500</td>
 							</tr>
 							<tr>
 								<td>Cicely</td>
@@ -1608,32 +1481,18 @@
 								<td><a href="#">Senior Research Officer</a></td>
 								<td>15 Mar 1960</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$159,000</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<!-- /basic initialization -->
+				<!-- /basic example -->
 
 
-				<!-- Scrolling table -->
+				<!-- Multi-column layout --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Scrolling table</h5>
+						<h5 class="card-title">Multi-column layout</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1644,10 +1503,10 @@
 					</div>
 
 					<div class="card-body">
-						The following example demonstrates combination of Keytable extension and scrolling table feature. KeyTable supports DataTables' scrolling options (<code>scrollX</code> and <code>scrollY</code>) without required any additional configuration. As the navigation keys are used to alter the focus of the KeyTable, the DataTables scrolling position is altered to show the focused cell.
+						The <code>collection</code> button has a <code>collectionLayout</code> option that can be used to control the layout of the buttons shown in the collection. As the <code>colvis</code> button extends the collection button, this option is also available for the column visibility controls. This example shows a fixed, two column layout. Please see the <code>collectionLayout</code> option in the <code>collection</code> button documentation for the full list of options.
 					</div>
 
-					<table class="table datatable-key-scroll">
+					<table class="table datatable-colvis-multi">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -1655,7 +1514,7 @@
 								<th>Job Title</th>
 								<th>DOB</th>
 								<th>Status</th>
-								<th class="text-center">Actions</th>
+								<th>Salary</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -1665,21 +1524,7 @@
 								<td>Traffic Court Referee</td>
 								<td>22 Jun 1972</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$85,600</td>
 							</tr>
 							<tr>
 								<td>Jackelyn</td>
@@ -1687,21 +1532,7 @@
 								<td><a href="#">Airline Transport Pilot</a></td>
 								<td>3 Oct 1981</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$106,450</td>
 							</tr>
 							<tr>
 								<td>Aura</td>
@@ -1709,21 +1540,7 @@
 								<td>Business Services Sales Representative</td>
 								<td>19 Apr 1969</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$237,500</td>
 							</tr>
 							<tr>
 								<td>Nathalie</td>
@@ -1731,21 +1548,7 @@
 								<td>Drywall Stripper</td>
 								<td>13 Dec 1977</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$198,500</td>
 							</tr>
 							<tr>
 								<td>Sharan</td>
@@ -1753,21 +1556,7 @@
 								<td>Aviation Tactical Readiness Officer</td>
 								<td>30 Dec 1991</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$470,600</td>
 							</tr>
 							<tr>
 								<td>Maxine</td>
@@ -1775,21 +1564,7 @@
 								<td><a href="#">Business Services Sales Representative</a></td>
 								<td>17 Oct 1987</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$90,560</td>
 							</tr>
 							<tr>
 								<td>Sylvia</td>
@@ -1797,21 +1572,7 @@
 								<td>Hemodialysis Technician</td>
 								<td>11 Nov 1983</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$103,600</td>
 							</tr>
 							<tr>
 								<td>Lizzee</td>
@@ -1819,21 +1580,7 @@
 								<td>Technical Services Librarian</td>
 								<td>1 Nov 1961</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$205,500</td>
 							</tr>
 							<tr>
 								<td>Kennedy</td>
@@ -1841,21 +1588,7 @@
 								<td>Senior Marketing Designer</td>
 								<td>18 Dec 1960</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$137,500</td>
 							</tr>
 							<tr>
 								<td>Chantal</td>
@@ -1863,21 +1596,7 @@
 								<td>Technical Services Librarian</td>
 								<td>10 Jan 1980</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$372,000</td>
 							</tr>
 							<tr>
 								<td>Delma</td>
@@ -1885,21 +1604,7 @@
 								<td>Lead Brand Manager</td>
 								<td>21 Dec 1968</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$162,700</td>
 							</tr>
 							<tr>
 								<td>Roland</td>
@@ -1907,21 +1612,7 @@
 								<td><a href="#">Senior Program Developer</a></td>
 								<td>5 Jun 1986</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$433,060</td>
 							</tr>
 							<tr>
 								<td>Coy</td>
@@ -1929,21 +1620,7 @@
 								<td>Customer Service Operator</td>
 								<td>12 Oct 1982</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$86,000</td>
 							</tr>
 							<tr>
 								<td>Maxwell</td>
@@ -1951,21 +1628,7 @@
 								<td>Regional Representative</td>
 								<td>25 Feb 1988</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$130,500</td>
 							</tr>
 							<tr>
 								<td>Cicely</td>
@@ -1973,32 +1636,18 @@
 								<td><a href="#">Senior Research Officer</a></td>
 								<td>15 Mar 1960</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$159,000</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<!-- /scrolling table -->
+				<!-- /multi-column layout -->
 
 
-				<!-- Focus cell custom styling -->
+				<!-- Restore column visibility --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Focus cell custom styling</h5>
+						<h5 class="card-title">Restore column visibility</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2009,10 +1658,10 @@
 					</div>
 
 					<div class="card-body">
-						When KeyTable adds focus to a table's cell it adds a class (defined by <code>keys.className</code> - default <code>focus</code>). This class can be used to provide styling information to highlight the focused cell to the end user. The provided stylesheets use CSS outline to show focus, but any CSS property can be used. This example uses a thin outline with a <strong>green</strong> border color and a light <strong>green</strong> background to highlight the focused cell.
+						The <code>colvisRestore</code> provides a single click button that will restore the table's column visibility to the same as when the DataTable was initialised. This example shows the <code>colvis</code> button collection augmented with the <code>colvisRestore</code> button type through the <code>postfixButtons</code> option to add the restore button to the end of the column visibility collection. 
 					</div>
 
-					<table class="table datatable-key-class">
+					<table class="table datatable-colvis-restore">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -2020,7 +1669,7 @@
 								<th>Job Title</th>
 								<th>DOB</th>
 								<th>Status</th>
-								<th class="text-center">Actions</th>
+								<th>Salary</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2030,21 +1679,7 @@
 								<td>Traffic Court Referee</td>
 								<td>22 Jun 1972</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$85,600</td>
 							</tr>
 							<tr>
 								<td>Jackelyn</td>
@@ -2052,21 +1687,7 @@
 								<td><a href="#">Airline Transport Pilot</a></td>
 								<td>3 Oct 1981</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$106,450</td>
 							</tr>
 							<tr>
 								<td>Aura</td>
@@ -2074,21 +1695,7 @@
 								<td>Business Services Sales Representative</td>
 								<td>19 Apr 1969</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$237,500</td>
 							</tr>
 							<tr>
 								<td>Nathalie</td>
@@ -2096,21 +1703,7 @@
 								<td>Drywall Stripper</td>
 								<td>13 Dec 1977</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$198,500</td>
 							</tr>
 							<tr>
 								<td>Sharan</td>
@@ -2118,21 +1711,7 @@
 								<td>Aviation Tactical Readiness Officer</td>
 								<td>30 Dec 1991</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$470,600</td>
 							</tr>
 							<tr>
 								<td>Maxine</td>
@@ -2140,21 +1719,7 @@
 								<td><a href="#">Business Services Sales Representative</a></td>
 								<td>17 Oct 1987</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$90,560</td>
 							</tr>
 							<tr>
 								<td>Sylvia</td>
@@ -2162,21 +1727,7 @@
 								<td>Hemodialysis Technician</td>
 								<td>11 Nov 1983</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$103,600</td>
 							</tr>
 							<tr>
 								<td>Lizzee</td>
@@ -2184,21 +1735,7 @@
 								<td>Technical Services Librarian</td>
 								<td>1 Nov 1961</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$205,500</td>
 							</tr>
 							<tr>
 								<td>Kennedy</td>
@@ -2206,21 +1743,7 @@
 								<td>Senior Marketing Designer</td>
 								<td>18 Dec 1960</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$137,500</td>
 							</tr>
 							<tr>
 								<td>Chantal</td>
@@ -2228,21 +1751,7 @@
 								<td>Technical Services Librarian</td>
 								<td>10 Jan 1980</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$372,000</td>
 							</tr>
 							<tr>
 								<td>Delma</td>
@@ -2250,21 +1759,7 @@
 								<td>Lead Brand Manager</td>
 								<td>21 Dec 1968</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$162,700</td>
 							</tr>
 							<tr>
 								<td>Roland</td>
@@ -2272,21 +1767,7 @@
 								<td><a href="#">Senior Program Developer</a></td>
 								<td>5 Jun 1986</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$433,060</td>
 							</tr>
 							<tr>
 								<td>Coy</td>
@@ -2294,21 +1775,7 @@
 								<td>Customer Service Operator</td>
 								<td>12 Oct 1982</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$86,000</td>
 							</tr>
 							<tr>
 								<td>Maxwell</td>
@@ -2316,21 +1783,7 @@
 								<td>Regional Representative</td>
 								<td>25 Feb 1988</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$130,500</td>
 							</tr>
 							<tr>
 								<td>Cicely</td>
@@ -2338,32 +1791,18 @@
 								<td><a href="#">Senior Research Officer</a></td>
 								<td>15 Mar 1960</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$159,000</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<!-- /Focus cell custom styling -->
+				<!-- /restore column visibility -->
 
 
-				<!-- Key table events -->
+				<!-- State saving --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Key table events</h5>
+						<h5 class="card-title">State saving</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2374,10 +1813,10 @@
 					</div>
 
 					<div class="card-body">
-						Enabling KeyTable on a DataTable is trivial with the keys option, however, to have it perform a useful function you'll want to know when the end user performs interaction options with the table's focus. For this KeyTable has a number of events it can trigger: <code>key</code> - a key has been pressed while a cell has focus; <code>key-focus</code> - a cell has gained focus; <code>key-blur</code> - a cell has lost focus.
+						Button's column visibility module works seamlessly with DataTables' state saving option (<code>stateSave</code>). All you need to do is enable both the column visibility buttons and state saving, as shown in this example. To demonstrate this ability, simple hide a few columns and then refresh the table. The columns you selected to be hidden will remain hidden and the button states will reflect this.
 					</div>
 
-					<table class="table datatable-key-events">
+					<table class="table datatable-colvis-state">
 						<thead>
 							<tr>
 								<th>First Name</th>
@@ -2385,7 +1824,7 @@
 								<th>Job Title</th>
 								<th>DOB</th>
 								<th>Status</th>
-								<th class="text-center">Actions</th>
+								<th>Salary</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2395,21 +1834,7 @@
 								<td>Traffic Court Referee</td>
 								<td>22 Jun 1972</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$85,600</td>
 							</tr>
 							<tr>
 								<td>Jackelyn</td>
@@ -2417,21 +1842,7 @@
 								<td><a href="#">Airline Transport Pilot</a></td>
 								<td>3 Oct 1981</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$106,450</td>
 							</tr>
 							<tr>
 								<td>Aura</td>
@@ -2439,21 +1850,7 @@
 								<td>Business Services Sales Representative</td>
 								<td>19 Apr 1969</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$237,500</td>
 							</tr>
 							<tr>
 								<td>Nathalie</td>
@@ -2461,21 +1858,7 @@
 								<td>Drywall Stripper</td>
 								<td>13 Dec 1977</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$198,500</td>
 							</tr>
 							<tr>
 								<td>Sharan</td>
@@ -2483,21 +1866,7 @@
 								<td>Aviation Tactical Readiness Officer</td>
 								<td>30 Dec 1991</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$470,600</td>
 							</tr>
 							<tr>
 								<td>Maxine</td>
@@ -2505,21 +1874,7 @@
 								<td><a href="#">Business Services Sales Representative</a></td>
 								<td>17 Oct 1987</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$90,560</td>
 							</tr>
 							<tr>
 								<td>Sylvia</td>
@@ -2527,21 +1882,7 @@
 								<td>Hemodialysis Technician</td>
 								<td>11 Nov 1983</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$103,600</td>
 							</tr>
 							<tr>
 								<td>Lizzee</td>
@@ -2549,21 +1890,7 @@
 								<td>Technical Services Librarian</td>
 								<td>1 Nov 1961</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$205,500</td>
 							</tr>
 							<tr>
 								<td>Kennedy</td>
@@ -2571,21 +1898,7 @@
 								<td>Senior Marketing Designer</td>
 								<td>18 Dec 1960</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$137,500</td>
 							</tr>
 							<tr>
 								<td>Chantal</td>
@@ -2593,21 +1906,7 @@
 								<td>Technical Services Librarian</td>
 								<td>10 Jan 1980</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$372,000</td>
 							</tr>
 							<tr>
 								<td>Delma</td>
@@ -2615,21 +1914,7 @@
 								<td>Lead Brand Manager</td>
 								<td>21 Dec 1968</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$162,700</td>
 							</tr>
 							<tr>
 								<td>Roland</td>
@@ -2637,21 +1922,7 @@
 								<td><a href="#">Senior Program Developer</a></td>
 								<td>5 Jun 1986</td>
 								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$433,060</td>
 							</tr>
 							<tr>
 								<td>Coy</td>
@@ -2659,21 +1930,7 @@
 								<td>Customer Service Operator</td>
 								<td>12 Oct 1982</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$86,000</td>
 							</tr>
 							<tr>
 								<td>Maxwell</td>
@@ -2681,21 +1938,7 @@
 								<td>Regional Representative</td>
 								<td>25 Feb 1988</td>
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$130,500</td>
 							</tr>
 							<tr>
 								<td>Cicely</td>
@@ -2703,30 +1946,167 @@
 								<td><a href="#">Senior Research Officer</a></td>
 								<td>15 Mar 1960</td>
 								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td>$159,000</td>
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<!-- /state saving -->
+
+
+				<!-- Column groups --
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Column groups</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
 
 					<div class="card-body">
-						<pre class="pre-scrollable" id="key-events"></pre>
+						When working with column visibility you may wish to present a control to the end use that provides the ability to set various columns to both show and hide at the same time - allowing grouping to occur. The <code>colvisGroup</code> button type provides this ability for Buttons. The <code>show</code> and <code>hide</code> parameters of this button are both <code>column-selector</code> types defining the columns in the table that should be shown or hidden respectively.
 					</div>
+
+					<table class="table datatable-colvis-group">
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Job Title</th>
+								<th>DOB</th>
+								<th>Status</th>
+								<th>Salary</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Marth</td>
+								<td><a href="#">Enright</a></td>
+								<td>Traffic Court Referee</td>
+								<td>22 Jun 1972</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td>$85,600</td>
+							</tr>
+							<tr>
+								<td>Jackelyn</td>
+								<td>Weible</td>
+								<td><a href="#">Airline Transport Pilot</a></td>
+								<td>3 Oct 1981</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td>$106,450</td>
+							</tr>
+							<tr>
+								<td>Aura</td>
+								<td>Hard</td>
+								<td>Business Services Sales Representative</td>
+								<td>19 Apr 1969</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td>$237,500</td>
+							</tr>
+							<tr>
+								<td>Nathalie</td>
+								<td><a href="#">Pretty</a></td>
+								<td>Drywall Stripper</td>
+								<td>13 Dec 1977</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td>$198,500</td>
+							</tr>
+							<tr>
+								<td>Sharan</td>
+								<td>Leland</td>
+								<td>Aviation Tactical Readiness Officer</td>
+								<td>30 Dec 1991</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td>$470,600</td>
+							</tr>
+							<tr>
+								<td>Maxine</td>
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td>$90,560</td>
+							</tr>
+							<tr>
+								<td>Sylvia</td>
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td>$103,600</td>
+							</tr>
+							<tr>
+								<td>Lizzee</td>
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td>$205,500</td>
+							</tr>
+							<tr>
+								<td>Kennedy</td>
+								<td>Haley</td>
+								<td>Senior Marketing Designer</td>
+								<td>18 Dec 1960</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td>$137,500</td>
+							</tr>
+							<tr>
+								<td>Chantal</td>
+								<td><a href="#">Nailor</a></td>
+								<td>Technical Services Librarian</td>
+								<td>10 Jan 1980</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td>$372,000</td>
+							</tr>
+							<tr>
+								<td>Delma</td>
+								<td>Bonds</td>
+								<td>Lead Brand Manager</td>
+								<td>21 Dec 1968</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td>$162,700</td>
+							</tr>
+							<tr>
+								<td>Roland</td>
+								<td>Salmos</td>
+								<td><a href="#">Senior Program Developer</a></td>
+								<td>5 Jun 1986</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td>$433,060</td>
+							</tr>
+							<tr>
+								<td>Coy</td>
+								<td>Wollard</td>
+								<td>Customer Service Operator</td>
+								<td>12 Oct 1982</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td>$86,000</td>
+							</tr>
+							<tr>
+								<td>Maxwell</td>
+								<td>Maben</td>
+								<td>Regional Representative</td>
+								<td>25 Feb 1988</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td>$130,500</td>
+							</tr>
+							<tr>
+								<td>Cicely</td>
+								<td>Sigler</td>
+								<td><a href="#">Senior Research Officer</a></td>
+								<td>15 Mar 1960</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td>$159,000</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<!-- /key table events -->
+				<!-- /column groups -->
 
 			</div>
 			<!-- /content area -->

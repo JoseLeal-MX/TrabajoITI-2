@@ -23,7 +23,13 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/extensions/scroller.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
 	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_extension_scroller.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -397,12 +403,13 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menú principal</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.php" class="nav-link active">
+							<a href="index.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
 						</li>
@@ -471,7 +478,7 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<!--li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
 						<!-- /main -->
 
 						<!-- Forms --
@@ -965,6 +972,10 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li-->
+
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TRANSPORTE</span></a>
+							<li class="nav-item"><a href="tabla_transporte.php" class="nav-link">Pago de transporte escolar</a></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
@@ -973,16 +984,33 @@
 								<li class="nav-item"><a href="datatable_advanced.php" class="nav-link">Agregar empleados</a></li>
 								<!--li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
 								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li-->
-								<li class="nav-item"><a href="datatable_data_sources.php" class="nav-link">Vacaciones</a></li>
+								<li class="nav-item"><a href="datatable_data_sources2.html" class="nav-link">Vacaciones</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_scroller.php" class="nav-link">Listado de tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_row_reorder2.php" class="nav-link">Actualizar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_reorder2.php" class="nav-link">Agregar tutorías</a></li>
+								<li class="nav-item"><a href="datatable_extension_key_table2.php" class="nav-link">Eliminar tutorías</a></li>
                         <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
 								<li class="nav-item"><a href="datatable_api.php" class="nav-link active">Departamentos</a></li>
-								<li class="nav-item"><a href="datatable_responsive.php" class="nav-link">Actualizar lista de apartamentos</a></li>
+								<li class="nav-item"><a href="datatable_responsive2.php" class="nav-link">Actualizar lista de apartamentos</a></li>
 								<li class="nav-item"><a href="datatable_sorting.php" class="nav-link">Agregar departamentos</a></li>
-						<!--li class="nav-item nav-item-submenu">
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>ALUMNOS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_extension_fixed_header.php" class="nav-link active">Listado de alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_fixed_columns.php" class="nav-link">Actualizar alumnos</a></li>
+								<li class="nav-item"><a href="datatable_extension_colvis.php" class="nav-link">Agregar alumnos</a></li>
+							</ul>
+						</li>
+						<!--li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">
 								<li class="nav-item"><a href="datatable_extension_reorder.html" class="nav-link">Columns reorder</a></li>
@@ -991,7 +1019,7 @@
 								<li class="nav-item"><a href="datatable_extension_fixed_header.html" class="nav-link">Fixed header</a></li>
 								<li class="nav-item"><a href="datatable_extension_autofill.html" class="nav-link">Auto fill</a></li>
 								<li class="nav-item"><a href="datatable_extension_key_table.html" class="nav-link">Key table</a></li>
-								<li class="nav-item"><a href="datatable_extension_scroller.html" class="nav-link">Scroller</a></li>
+								<li class="nav-item"><a href="datatable_extension_scroller.html" class="nav-link active">Scroller</a></li>
 								<li class="nav-item"><a href="datatable_extension_select.html" class="nav-link">Select</a></li>
 								<li class="nav-item nav-item-submenu">
 									<a href="#" class="nav-link">Buttons</a>
@@ -1210,7 +1238,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Actualizar datos de empresa</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Listado</span> - Tutorías</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1227,8 +1255,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="table_sizing.html" class="breadcrumb-item">Tables</a>
-							<span class="breadcrumb-item active">Sizing</span>
+							<a href="datatable_extension_scroller.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Scroller</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1265,10 +1293,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Extra large table -->
+				<!-- Basic Scroller example -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Actualizar datos de empresas</h5>
+						<h5 class="card-title">TUTORÍAS</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1279,175 +1307,197 @@
 					</div>
 
 					<div class="card-body">
-						Puede que usted, al momento de haber registrado a una empresa, haya ingresado algún dato incorrecto, por lo que se recomienda corregirlo en caso de haberlo cometido, para evitar problemas a futuro
+						Bienvenido a la sección de tutorías, una sección demasiado alejada del tema que se está tratando en la empresa. Aquí se le mostrará un listado de todas las tutorías que se han registrado.
 					</div>
 
-					<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Ubicación</th>
-									<th>CEO (Director(es) Ejecutivo)</th>
-									<th>Correo</th>
-									<th>Representante legal</th>
-									<th>RFC de empresa</th>
-									<th>¿Prestaciones?</th>
-									<th>¿Acciones en la bolsa?</th>
-									<th>Valor de acciones</th>
-									<th>Situación jurídica</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Lehman Brothers for ITI</td>
-									<td>Nueva York #4121, Libramiento Naciones Unidas</td>
-									<td>Arturo Lehman & Moisés Lehman</td>
-									<td>lehmanbrothersiti@lehman.com</td>
-									<td>Abraham Ramírez</td>
-									<td>LBI7010114LS</td>
-									<td>Seguro Popular, seguro de vida, vacaciones</td>
-									<td>SÍ</td>
-									<td>MXN $17.10</td>
-									<th>Bancarrota</th>
-								</tr>
-								<tr>
-									<td>Cisco Systems</td>
-									<td>Nueva York #4121, Libramiento Naciones Unidas, TAMPS</td>
-									<td>Chuck Robbins</td>
-									<td>Sin correo</td>
-									<td>Mark Chandler</td>
-									<td>CSY841201WL1</td>
-									<td>Vcaciones, Seguro médico</td>
-									<td>SÍ</td>
-									<td>MXN $907</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>Lenovo</td>
-									<td>Paseo de los Tamarindos #400, Bosque de las Lomas, CDMX</td>
-									<td>Yang Yuanqing</td>
-									<td>lehmanbrothersiti@lehman.com</td>
-									<td>Yong Rui</td>
-									<td>LNV841101SW1</td>
-									<td>Vacaciones</td>
-									<td>SÍ</td>
-									<td>MXN $140</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>DELL</td>
-									<td>Paseo de la Reforma #2620, Loma Alta, CDMX</td>
-									<td>Michael Dell</td>
-									<td>dellcontact@dell.com</td>
-									<td>Sin datos</td>
-									<td>DLL831104SQZ</td>
-									<td>Vacaciones, seguro médico, prima vacacional</td>
-									<td>SÍ</td>
-									<td>MXN $905</td>
-									<th>Operando</th>
-								</tr>
-								<tr>
-									<td>HP Inc.</td>
-									<td>Paseo de la Reforma, CDMX</td>
-									<td>Dion Wisler</td>
-									<td>hpclientsupport@hpinc.com</td>
-									<td>Kim M. Rivera</td>
-									<td>HPI151101MW1</td>
-									<td>Vacaciones pagas, seguro médico</td>
-									<td>SÍ</td>
-									<td>MXN $315</td>
-									<th>Operando</th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre de la empresa</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="ej. Lehman Brothers ITI">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Ubicación</label>
-									<div class="col-lg-10">
-									<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">CEO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>			
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo electrónico</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-											
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Representante legal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
+					<table class="table datatable-basic">
+						<thead>
+							<tr>
+					            <th>ID</th>
+					            <th>Fecha inicio de sesión</th>
+					            <th>Tema abordado</th>
+					            <th>(Alumno) Nombre</th>
+					            <th>Matrícula</th>
+					            <th>Carrera</th>
+					            <th>(Empleado) Nombre</th>
+					            <th>Num. Empleado</th>
+					            <th>Departamento</th>
+					        </tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>100</td>
+						<td>21-10-2019</a></td>
+						<td>Lecciones sobre Valores</td>
+						<td>José Leal</td>
+						<td>1930669</td>
+						<td>Ingeniería en Tecnologías de la Información</td>
+						<td>Aurora de la Cruz</td>
+						<td>01</td>
+						<td>Recursos Humanos</td>
+					</tr>
+					<tr>
+						<td>101</td>
+						<td>01-10-2019</a></td>
+						<td>Álgebra Lineal</td>
+						<td>Samuel García</td>
+						<td>1920129</td>
+						<td>Mecatrónica</td>
+						<td>Jacqueline Carrera</td>
+						<td>02</td>
+						<td>Finanzas y Contabilidad</td>
+					</tr>
+					<tr>
+						<td>102</td>
+						<td>30-09-2019</a></td>
+						<td>Administración de Empresas</td>
+						<td>Isaí Requena</td>
+						<td>1920112</td>
+						<td>PyMES</td>
+						<td>Lizbeth Amairani</td>
+						<td>03</td>
+						<td>Finanzas y Contabilidad</td>
+					</tr>
+					<tr>
+						<td>103</td>
+						<td>15-09-2019</a></td>
+						<td>Herramientas Ofimáticas</td>
+						<td>Edgar Rodríguez</td>
+						<td>1930772</td>
+						<td>Ingeniería en Tecnologías de la Programación</td>
+						<td>Martín López</td>
+						<td>04</td>
+						<td>Informática</td>
+					</tr>
+					<tr>
+						<td>104</td>
+						<td>05-09-2019</a></td>
+						<td>Herramientas Ofimáticas</td>
+						<td>Angélica Requena</td>
+						<td>1910452</td>
+						<td>Ingeniería en Tecnologías de la Programación</td>
+						<td>Máximo López</td>
+						<td>05</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>105</td>
+						<td>07-08-2019</a></td>
+						<td>Cálculo Diferencial</td>
+						<td>Luis Moreno</td>
+						<td>1929770</td>
+						<td>Tecnologías de Manufactura</td>
+						<td>Natalia Requena</td>
+						<td>06</td>
+						<td>Finanzas y Contabilidad</td>
+					</tr>	
+					<tr>
+						<td>106</td>
+						<td>11-09-2019</a></td>
+						<td>Introducción a la Programación</td>
+						<td>Idalia Limas</td>
+						<td>1930912</td>
+						<td>Ingeniería en Tecnologías de la Información</td>
+						<td>Sharon Aguilar</td>
+						<td>08</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>107</td>
+						<td>10-09-2019</a></td>
+						<td>Amenazas Informáticas</td>
+						<td>Sebastián Zaleta</td>
+						<td>1930111</td>
+						<td>Ingeniería en Tecnologías de la Información</td>
+						<td>Martín López</td>
+						<td>04</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>108</td>
+						<td>15-09-2019</a></td>
+						<td>Lecciones de Inglés I</td>
+						<td>Jennifer Coronado</td>
+						<td>1930870</td>
+						<td>Licenciatura en Psicología</td>
+						<td>Sharon Aguilar</td>
+						<td>08</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>109</td>
+						<td>29-09-2019</a></td>
+						<td>Lecciones de Inglés II</td>
+						<td>Esmeralda Limas</td>
+						<td>1927971</td>
+						<td>Tecnologías de Manufactura</td>
+						<td>Aurora de la Cruz</td>
+						<td>01</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>110</td>
+						<td>03-10-2019</a></td>
+						<td>Dudas sobre antivirus</td>
+						<td>Jonathan Leal</td>
+						<td>1928931</td>
+						<td>Ingeniería en Tecnologías de la Información</td>
+						<td>Máximo López</td>
+						<td>05</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>111</td>
+						<td>15-10-2019</a></td>
+						<td>Máquinas virtuales</td>
+						<td>Edgar Rodríguez</td>
+						<td>1930772</td>
+						<td>Ingeniería en Tecnologías de la Información</td>
+						<td>Martín López</td>
+						<td>04</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>112</td>
+						<td>27-10-2019</a></td>
+						<td>Dudas sobre Psicología</td>
+						<td>Federico Leal</td>
+						<td>1930999</td>
+						<td>Licenciatura en Psicología</td>
+						<td>Martín López</td>
+						<td>04</td>
+						<td>Informática</td>
+					</tr>	
+					<tr>
+						<td>113</td>
+						<td>11-09-2019</a></td>
+						<td>Publicidad de la empresa</td>
+						<td>Guadalupe Aguilar</td>
+						<td>1930122</td>
+						<td>PyMES</td>
+						<td>Sylvia Martínez</td>
+						<td>09</td>
+						<td>Publicidad y Mercadotecnia</td>
+					</tr>	
+					<tr>
+						<td>114</td>
+						<td>30-10-2019</a></td>
+						<td>Cálculo Integral</td>
+						<td>Noé Vázquez</td>
+						<td>1930312</td>
+						<td>Maestría en Ingeniería</td>
+						<td>Jacqueline Carrera</td>
+						<td>02</td>
+						<td>Informática</td>
+					</tr>		
 					
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">RFC</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Prestaciones</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">¿Acciones en la bolsa?</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Valor de acciones</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-							<div class="form-group row">
-									<label class="col-form-label col-lg-2">Situación jurídica</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-							</div>
-
-								<div class="row">
-					<div class="col-lg-4">
-						<div class="card card-body border-top-primary">
-		                    	<button type="button" class="btn btn-primary">Actualizar</button>
-	                    	</div>
-						</div>
-					</div>
-				<!-- /extra large table -->
+				<!-- /basic Scroller example -->
 
 
-				<!-- Large table --
+				<!-- With Buttons extension --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Large table</h5>
+						<h5 class="card-title">With Buttons extension</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1458,73 +1508,28 @@
 					</div>
 
 					<div class="card-body">
-						Example of <code>large</code> table sizing using <code>.table-lg</code> class added to the <code>.table</code>. All table rows have <code>53px</code> height in REM units.
+						Scroller also supports DataTable's <code>Buttons</code> extension. Buttons can be initialised very easily though the <code>buttons</code> object which can be given as an array of the buttons that you wish to display. The <code>B</code> option in the dom parameter will instruct DataTables where the buttons should be placed in the document - in this case, at the top right. This example shows the <code>copy</code>, <code>csv</code>, <code>excel</code>, <code>pdf</code> and <code>print</code> buttons being used to display data export options for the DataTable.
 					</div>
 
-					<div class="table-responsive">
-						<table class="table table-lg">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Username</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Eugene</td>
-									<td>Kopyov</td>
-									<td>@Kopyov</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Victoria</td>
-									<td>Baker</td>
-									<td>@Vicky</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>James</td>
-									<td>Alexander</td>
-									<td>@Alex</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Franklin</td>
-									<td>Morrison</td>
-									<td>@Frank</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<table class="table datatable-scroller-buttons" width="100%">
+						<thead>
+							<tr>
+					            <th>ID</th>
+					            <th>First name</th>
+					            <th>Last name</th>
+					            <th>ZIP / Post code</th>
+					            <th>Country</th>
+					        </tr>
+						</thead>
+					</table>
 				</div>
-				<!-- /large table -->
+				<!-- /with Buttons extension -->
 
 
-				<!-- Default table --
+				<!-- State saving --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Default table</h5>
+						<h5 class="card-title">State saving</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1535,73 +1540,28 @@
 					</div>
 
 					<div class="card-body">
-						Example of <code>default</code> table sizing. This table doesn't require any additional classes in <code>.table</code> container. All table rows have <code>44px</code> height in REM units.
+						Scroller will automatically integrate with DataTables in order to <code>save</code> the scrolling position of the table, if state saving is enabled in the DataTable (<code>stateSave</code>). This example shows that in practice - to demonstrate, scroll the table and then reload the page. When the page is reloaded, the table's state will be altered to match what they had previously set up.
 					</div>
 
-					<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Username</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Eugene</td>
-									<td>Kopyov</td>
-									<td>@Kopyov</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Victoria</td>
-									<td>Baker</td>
-									<td>@Vicky</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>James</td>
-									<td>Alexander</td>
-									<td>@Alex</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Franklin</td>
-									<td>Morrison</td>
-									<td>@Frank</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<table class="table datatable-scroller-state" width="100%">
+						<thead>
+							<tr>
+					            <th>ID</th>
+					            <th>First name</th>
+					            <th>Last name</th>
+					            <th>ZIP / Post code</th>
+					            <th>Country</th>
+					        </tr>
+						</thead>
+					</table>
 				</div>
-				<!-- /default table -->
+				<!-- /state saving -->
 
 
-				<!-- Small table --
+				<!-- Using API --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Small table</h5>
+						<h5 class="card-title">Using API</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1612,144 +1572,22 @@
 					</div>
 
 					<div class="card-body">
-						Example of <code>small</code> table sizing using <code>.table-sm</code> class added to the <code>.table</code>. All table rows have <code>40px</code> height in REM units.
+						This example shows a trivial use of the <code>API</code> methods that Scroller adds to the DataTables API to scroll to a row once the table's data has been loaded. In this case <code>scroller().scrollToRow()</code> is used to jump to row 1000. DataTables' <code>info</code> control element is automatically updated and shows the current visible row. Table height is configurable through <code>scrollY</code> string.
 					</div>
 
-					<div class="table-responsive">
-						<table class="table table-sm">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Username</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Eugene</td>
-									<td>Kopyov</td>
-									<td>@Kopyov</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Victoria</td>
-									<td>Baker</td>
-									<td>@Vicky</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>James</td>
-									<td>Alexander</td>
-									<td>@Alex</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Franklin</td>
-									<td>Morrison</td>
-									<td>@Frank</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<table class="table datatable-scroller-api" width="100%">
+						<thead>
+							<tr>
+					            <th>ID</th>
+					            <th>First name</th>
+					            <th>Last name</th>
+					            <th>ZIP / Post code</th>
+					            <th>Country</th>
+					        </tr>
+						</thead>
+					</table>
 				</div>
-				<!-- /small table -->
-
-
-				<!-- Mini table --
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Mini table</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						Example of <code>mini</code> table sizing using <code>.table-xs</code> class added to the <code>.table</code>. All table rows have <code>36px</code> height in REM units.
-					</div>
-
-					<div class="table-responsive">
-						<table class="table table-xs">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Username</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Eugene</td>
-									<td>Kopyov</td>
-									<td>@Kopyov</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Victoria</td>
-									<td>Baker</td>
-									<td>@Vicky</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>James</td>
-									<td>Alexander</td>
-									<td>@Alex</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Franklin</td>
-									<td>Morrison</td>
-									<td>@Frank</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Winnie</td>
-									<td>the Pooh</td>
-									<td>@Winnie</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Garry</td>
-									<td>Smith</td>
-									<td>@Garry</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Ian</td>
-									<td>Berg</td>
-									<td>@Ian</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<!-- /mini table -->
+				<!-- /using API -->
 
 			</div>
 			<!-- /content area -->
